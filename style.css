@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #000;
+}
+
+html.pulse, body.pulse {
+    animation: pulse 10s infinite linear;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: #FF80D2;
+    }
+
+    33% {
+        background-color: #80FFD2;
+    }
+
+    66% {
+        background-color: #80E5FF;
+    }
+}
+
+html {
+    height: calc(100% - 3px);
+}
+
+body > div:first-child {
+    height: 100%;
+}
+
+canvas {
+    position: relative;
+    top: 2px;
+    display: block;
+    margin: 0 auto;
+}
